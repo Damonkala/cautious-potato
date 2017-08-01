@@ -1,0 +1,49 @@
+body {
+	font-size: calc(1vw + 1vh + 1vmin);
+}
+img {
+	width: 40vw;
+}
+.horizontal-collapse {
+  height: 70px;
+}
+.navbar-collapse.in {
+  overflow-y: hidden;
+}
+@media only screen and (min-width: 900px){
+	.mobile-display {
+		display: none;
+	}
+}
+@media only screen and (max-width: 900px){
+	.MAGIC {
+    	display: none;
+    }
+	.nav-item {
+		display: none;
+	}
+}
+.hamburger {
+	border: 1px solid grey;
+	width: 70px;
+	position: absolute;
+	right: 10px;
+}
+.hamburger > div {
+	width: 50px;
+	height: 10px;
+	background: grey;
+	margin: 10px;
+}
+.nav-bar-attempt {
+	width: 100%;
+	height: 5rem;
+	background: lightgrey;
+}
+.hamburger-items {
+	position: absolute;
+	right: 10px;
+}
+.mongosery {
+	width: 50%;
+}
