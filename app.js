@@ -2,9 +2,9 @@ const express = require('express');
 const app = express();
 
 const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1/cool');
+// mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1/cool');
 
 app.use(express.static(__dirname + '/views'));
 app.use(bodyParser.json())
@@ -13,7 +13,7 @@ app.use('/js', express.static(__dirname + '/javascripts/'));
 app.use('/css', express.static(__dirname + '/css/'));
 app.use('/pages', express.static(__dirname + '/templates/'));
 
-app.use('/mongeese', require('./routes/mongeese'));
+// app.use('/mongeese', require('./routes/mongeese'));
 
 app.get('/*', function (req, res) {
 res.sendFile(__dirname + '/views/index.html');
