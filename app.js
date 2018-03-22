@@ -15,8 +15,11 @@ app.use('/pages', express.static(__dirname + '/templates/'));
 
 // app.use('/mongeese', require('./routes/mongeese'));
 
-app.get('/*', function (req, res) {
+app.get('/home', function (req, res) {
 res.sendFile(__dirname + '/views/index.html');
+})
+app.get('/request', function (req, res) {
+res.sendFile("Request Success!!!");
 })
 app.use(function (req, res, next) {
   res.status(404).send("Sorry can't find that!")
