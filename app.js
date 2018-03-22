@@ -19,7 +19,7 @@ app.get('/home', function (req, res) {
 res.sendFile(__dirname + '/views/index.html');
 })
 app.get('/request', function (req, res) {
-res.sendFile("Request Success!!!");
+res.send("Request Success!!! \n");
 })
 app.use(function (req, res, next) {
   res.status(404).send("Sorry can't find that!")
